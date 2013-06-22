@@ -16,3 +16,8 @@ test/tmp
 test/version_tmp
 tmp
 nbproject
+.idea
+nbproject
+.coveralls.yml
+.DS_Store
+vendor
