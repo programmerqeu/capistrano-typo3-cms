@@ -1,5 +1,4 @@
-# Capistrano::Typo3::Cms
-___
+# capistrano-typo3-cms
 
 This is an extension for the deployment tool Capistrano. This extension facilitates the deploy of TYPO3 CMS projects.
 
@@ -36,8 +35,8 @@ Or easer with RVM: https://rvm.io/
 
 **Capify** your project
 ```bash
-cd /path/to/your/project
-capify ./
+$ cd /path/to/your/project
+$ capify ./
 ```
 Edit your **./Capfile** to include _capistrano-typo3-cms_
 
@@ -61,15 +60,16 @@ In case of using multistage create config files for every enviroment (deploy/sta
 	cap <enviroment> deploy
 
 
-## Projekt timeline
+## Project roadmap
 ### Version 0.0.1
 
-- Documentation "Deploying with Capistrano and TYPO3 CMS"
+- Documentation "Deploying with Capistrano and TYPO3 CMS
 - Resolving dependencies for PHP projects
 
 ### Version 1.0.0
 
-- Additional TYPO3:CMS tasks
+Additional TYPO3:CMS tasks
+
 	typo3:cms:setup
 	typo3:cms:cc	
 	typo3:cms:check
@@ -77,6 +77,20 @@ In case of using multistage create config files for every enviroment (deploy/sta
 	typo3:cms:data:pull
 	typo3:cms:data:backup
 
+### Version 2.0.0
+Including new package "capistrano-mysql" to manage database data.
+
+	mysql:push
+	mysql:pull
+	mysql:backup
+	mysql:sync <source_env> <target_env>
+	mysql:migrate
+	
+### Version 3.0.0
+CLI command support to create a new TYPO3 CMS project from the scratch.
+```bash
+$ typo3 init ./
+```
 
 ## Contributing
 
