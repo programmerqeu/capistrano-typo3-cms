@@ -1,6 +1,7 @@
 # capistrano-typo3-cms
 
 This is an extension for the deployment tool Capistrano. This extension facilitates the deploy of TYPO3 CMS projects.
+A German introduction can be reached at http://goo.gl/6B9Cj
 
 It includeds follows additional packages:
 
@@ -25,7 +26,7 @@ Install it yourself wit rubygems package manager:
 gem install capistrano-typo3-cms
 ```    
 
-Need help to install? http://docs.rubygems.org/read/chapter/3
+Need help to install ruby? http://docs.rubygems.org/read/chapter/3
 Or easer with RVM: https://rvm.io/   
 
 ## Usage
