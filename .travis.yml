@@ -7,5 +7,12 @@ rvm:
 #  - ree
 
 script:
-  bundle exec rake spec
-  bundle exec rake test
+  - bundle exec rake spec
+  - bundle exec rake test
+
+notifications:
+  email:
+    recipients:
+      - andre@programmerq.eu
+    on_success: always
+    on_failure: always
