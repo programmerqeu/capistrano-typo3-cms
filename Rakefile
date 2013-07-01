@@ -12,8 +12,9 @@ Rake::TestTask.new(:test) do |test|
 end
 
 # TestTask to run specs from console
-Rake::TestTask.new(:spec) do |spec|
-  spec.libs << 'lib' << 'spec'
+require 'rspec/core/rake_task'
+RSpec::Core::RakeTask.new(:spec) do |spec|
+  spec.rspec_opts = '--color --format=documentation -I lib -I spec'
   spec.pattern = 'spec/**/*_spec.rb'
 end
 

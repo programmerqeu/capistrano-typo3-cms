@@ -12,14 +12,11 @@ Gem::Specification.new do |specification|
   specification.description = <<-EOF
   To setup and deploy TYPO3 CMS projects.
   EOF
-  specification.summary = 'Extend the Capistrano gem with useful recipes for TYPO3 CMS. Ready to go with capistranO!'
+  specification.summary = 'Extend the Capistrano gem with useful recipes for TYPO3 CMS. Ready to go with Capistrano!'
   specification.homepage = %q{https://github.com/programmerqeu/capistrano-typo3-cms}
   specification.license = 'MIT'
   specification.post_install_message = 'Thanks for installing capistrano-typo3-cms!'
-  specification.files = `git ls-files`.split($/)
-
   specification.files = [
-      '.rspec',
       'Gemfile',
       'Gemfile.lock',
       'LICENSE.txt',
@@ -27,7 +24,7 @@ Gem::Specification.new do |specification|
       'README.md',
       'capistrano-typo3-cms.gemspec',
 
-      'lib/capistrano-typo3/cms.rb',
+      'lib/capistrano/typo3/cms.rb',
       'lib/capistrano/typo3/cms/version.rb',
 
       'test/test_helper.rb',
@@ -51,11 +48,12 @@ Gem::Specification.new do |specification|
   specification.add_dependency 'railsless-deploy', '~> 1.1.1'
 
   specification.add_development_dependency 'bundler', '~> 1.3'
+  specification.add_development_dependency 'capistrano', '~>  2.15.2'
   specification.add_development_dependency 'coveralls', '~> 0.6.7'
   specification.add_development_dependency 'capistrano-spec', '~> 0.5.0'
   specification.add_development_dependency 'minitest'
   specification.add_development_dependency 'minitest-reporters'
-  specification.add_development_dependency 'test-unit'
+  specification.add_development_dependency 'hoe', '~> 1.6.0'
   specification.add_development_dependency 'rspec', '~> 2.13.0'
   specification.add_development_dependency 'rake', '~> 10.1.0'
 
