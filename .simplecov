@@ -1,8 +1,7 @@
 SimpleCov.start do
   add_filter '_test'
-
-  add_group 'Core', 'lib/capistrano/typo3'
-  add_group 'Utils', 'lib/capistrano/typo3'
+  add_group 'Tests', 'test'
+  add_group 'SPecs', 'spec'
   add_group 'Long files' do |src_file|
     src_file.lines.count > 100
   end
