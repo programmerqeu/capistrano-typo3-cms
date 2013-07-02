@@ -18,6 +18,5 @@ tmp
 nbproject
 .idea
 nbproject
-.coveralls.yml
 .DS_Store
 vendor

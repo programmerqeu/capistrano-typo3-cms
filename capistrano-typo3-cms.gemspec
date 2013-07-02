@@ -56,5 +56,6 @@ Gem::Specification.new do |specification|
   specification.add_development_dependency 'hoe', '~> 1.6.0'
   specification.add_development_dependency 'rspec', '~> 2.13.0'
   specification.add_development_dependency 'rake', '~> 10.1.0'
+  specification.add_development_dependency 'simplecov', '~> 0.7.1'
 
 end

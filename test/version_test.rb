@@ -13,4 +13,8 @@ class CapistranoTypo3CmsVersionTest < Test::Unit::TestCase
     Capistrano::Typo3::Cms::VERSION.must_match(match, 'Wrong Format');
   end
 
+  def test_girls_just_wanna_have_fun
+    assert true
+  end
+
 end

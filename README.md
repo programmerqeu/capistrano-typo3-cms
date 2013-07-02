@@ -12,7 +12,7 @@ It includeds follows additional packages:
 
 ___
 
-[![Build Status](https://travis-ci.org/programmerqeu/capistrano-typo3-cms.png?branch=master)](https://travis-ci.org/programmerqeu/capistrano-typo3-cms)
+[![Build Status](https://travis-ci.org/programmerqeu/capistrano-typo3-cms.png?branch=major/0)](https://travis-ci.org/programmerqeu/capistrano-typo3-cms)
 [![Gem Version](https://badge.fury.io/rb/capistrano-typo3-cms.png)](http://badge.fury.io/rb/capistrano-typo3-cms)
 [![Dependency Status](https://gemnasium.com/programmerqeu/capistrano-typo3-cms.png)](https://gemnasium.com/programmerqeu/capistrano-typo3-cms)
 [![Code Climate](https://codeclimate.com/github/programmerqeu/capistrano-typo3-cms.png)](https://codeclimate.com/github/programmerqeu/capistrano-typo3-cms)

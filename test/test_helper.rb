@@ -1,3 +1,13 @@
+# SimpleCov & Coveralls
+require 'simplecov'
+require 'coveralls'
+
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+    SimpleCov::Formatter::HTMLFormatter,
+    Coveralls::SimpleCov::Formatter
+]
+Coveralls.wear_merged!
+
 # Bundler
 require 'rubygems'
 require 'bundler/setup'
@@ -11,5 +21,3 @@ require 'minitest/autorun'
 require 'minitest/reporters'
 
 MiniTest::Reporters.use!
-require 'coveralls'
-Coveralls.wear!

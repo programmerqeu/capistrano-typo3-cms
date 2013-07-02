@@ -27,7 +27,7 @@ module Capistrano
 
           set :scm, :git
           set :deploy_via, :remote_cache
-          _cset :branch, "master"
+          _cset :branch, 'master'
           set :git_enable_submodules, true
 
           set(:deploy_to) { "/var/www/#{application}" }
