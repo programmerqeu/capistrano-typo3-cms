@@ -1,3 +1,12 @@
+# SimpleCov & Coveralls
+require 'simplecov'
+require 'coveralls'
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+    SimpleCov::Formatter::HTMLFormatter,
+    Coveralls::SimpleCov::Formatter
+]
+Coveralls.wear_merged!
+
 # Bundler
 require 'rubygems'
 require 'bundler/setup'
@@ -11,14 +20,6 @@ require 'rspec/autorun'
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 
-# SimpleCov & Coveralls
-require 'simplecov'
-require 'coveralls'
-SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
-    SimpleCov::Formatter::HTMLFormatter,
-    Coveralls::SimpleCov::Formatter
-]
-Coveralls.wear_merged!
 
 # Add capistrano-spec matchers and helpers to RSpec
 RSpec.configure do |config|
