@@ -6,8 +6,3 @@ SimpleCov.start do
     src_file.lines.count > 100
   end
 end
-
-SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
-  SimpleCov::Formatter::HTMLFormatter,
-  Coveralls::SimpleCov::Formatter
-]
