@@ -2,17 +2,18 @@
 require 'rubygems'
 require 'bundler/setup'
 
-$LOAD_PATH.unshift(File.dirname(__FILE__))
-$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
-
+# RSpec
 require 'capistrano-spec'
 require 'rspec'
 require 'rspec/autorun'
 
+# Path
+$LOAD_PATH.unshift(File.dirname(__FILE__))
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
+
 # SimpleCov & Coveralls
 require 'simplecov'
 require 'coveralls'
-
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
     SimpleCov::Formatter::HTMLFormatter,
     Coveralls::SimpleCov::Formatter
