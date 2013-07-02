@@ -9,6 +9,16 @@ require 'capistrano-spec'
 require 'rspec'
 require 'rspec/autorun'
 
+# SimpleCov & Coveralls
+require 'simplecov'
+require 'coveralls'
+
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+    SimpleCov::Formatter::HTMLFormatter,
+    Coveralls::SimpleCov::Formatter
+]
+Coveralls.wear_merged!
+
 # Add capistrano-spec matchers and helpers to RSpec
 RSpec.configure do |config|
   config.include Capistrano::Spec::Matchers

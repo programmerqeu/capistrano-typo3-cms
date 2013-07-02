@@ -1,0 +1,14 @@
+SimpleCov.start do
+  add_filter '_test'
+
+  add_group 'Core', 'lib/capistrano/typo3'
+  add_group 'Utils', 'lib/capistrano/typo3'
+  add_group 'Long files' do |src_file|
+    src_file.lines.count > 100
+  end
+end
+
+#SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+#    SimpleCov::Formatter::HTMLFormatter,
+#    Coveralls::SimpleCov::Formatter
+#]
