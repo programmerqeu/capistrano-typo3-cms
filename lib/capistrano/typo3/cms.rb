@@ -4,20 +4,30 @@ require 'capistrano'
 module Capistrano
   module Typo3
     module Cms
+
+
       def self.load_into(configuration)
         configuration.load do
+
+          # load tasks
+          load_paths.push File.expand_path('../', __FILE__)
+          load 'cms/cache'
+          load 'cms/version'
+
+          # load dependencies
           require 'capistrano'
           require 'capistrano/recipes/deploy/scm'
           require 'capistrano/recipes/deploy/strategy'
           require 'railsless-deploy'
           require 'capistrano_colors'
+
+          # set color settings
           capistrano_color_matchers = [
               {:match => /command finished/, :color => :hide, :prio => 10},
               {:match => /executing command/, :color => :blue, :prio => 10, :attribute => :underscore},
               {:match => /^transaction: commit$/, :color => :magenta, :prio => 10, :attribute => :blink},
               {:match => /git/, :color => :white, :prio => 20, :attribute => :reverse},
           ]
-
           colorize(capistrano_color_matchers)
 
           # =========================================================================
@@ -30,11 +40,17 @@ module Capistrano
           _cset :branch, 'master'
           set :git_enable_submodules, true
 
+          set :test, 'test'
           set(:deploy_to) { "/var/www/#{application}" }
 
-          task :speak do
-            set :message, 'oh hai'
-            puts message
+          # default tasks
+          namespace :typo3 do
+            namespace :cms do
+              task :speak do
+                set :message, 'jojo'
+                run "echo \"Hello, #{cmd}\""
+              end
+            end
           end
 
         end
