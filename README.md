@@ -3,12 +3,13 @@
 This is an extension for the deployment tool Capistrano. This extension facilitates the deploy of TYPO3 CMS projects.
 A German introduction can be reached at http://goo.gl/6B9Cj
 
-It includeds follows additional packages:
+**It includeds follows additional packages:** 
 
-1. capistrano
-- capistrano-ext
-- railsless-deploy
-- capistrano_colors
+1. [capistrano](http://www.capistranorb.com/)
+- [capistrano-ext](https://github.com/neerajkumar/capistrano-ext)
+- [railsless-deploy](https://github.com/leehambley/railsless-deploy/)
+
+[Thank you!](#thanks)
 
 ___
 
@@ -151,3 +152,13 @@ $ typo3 init ./
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+<a name="thanks"></a>
+## Thanks you
+1. A special thanks to **Jamis Buck** and **Lee Hambley**, the developers of Capistrano. 
+- Thank you to developers of capistrano-ext and railess-deploy. 
+- Further thanks **JetBrains** for a free license for RubyMine. 
+
+<a href="http://www.jetbrains.com/ruby/features?utm_source=RubyMineUser&utm_medium=Banner&utm_campaign=RubyMine">
+<img src="http://www.jetbrains.com/img/logos/RubyMine_logo.gif" alt="Sponsored by RubyMine" style="width: 220px; float:right"></a>
+
