@@ -43,7 +43,6 @@ Gem::Specification.new do |specification|
 
   specification.add_dependency 'capistrano', '~>  2.15.2'
   specification.add_dependency 'capistrano-ext', '~> 1.2.1'
-  specification.add_dependency 'capistrano_colors', '~> 0.5.5'
   specification.add_dependency 'capistrano_rsync_with_remote_cache', '~> 2.4.0'
   specification.add_dependency 'railsless-deploy', '~> 1.1.1'
 
@@ -51,10 +50,12 @@ Gem::Specification.new do |specification|
   specification.add_development_dependency 'capistrano', '~>  2.15.2'
   specification.add_development_dependency 'coveralls', '~> 0.6.7'
   specification.add_development_dependency 'capistrano-spec', '~> 0.5.0'
+  specification.add_development_dependency 'guard', '~> 1.8.1'
+  specification.add_development_dependency 'guard-rspec', '~> 3.0.2'
   specification.add_development_dependency 'minitest'
   specification.add_development_dependency 'minitest-reporters'
   specification.add_development_dependency 'hoe', '~> 1.6.0'
-  specification.add_development_dependency 'rspec', '~> 2.13.0'
+  specification.add_development_dependency 'rspec', '~> 2.4.0'
   specification.add_development_dependency 'rake', '~> 10.1.0'
   specification.add_development_dependency 'simplecov', '~> 0.7.1'
 

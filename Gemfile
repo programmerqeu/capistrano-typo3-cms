@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # gem's dependencies specified in capistrano-typo3-cms.gemspec
 gemspec
 
-gem 'coveralls', require: false
+gem 'coveralls'
 
 group :test, :development do
   if RUBY_PLATFORM =~ /(win32|w32)/
@@ -29,4 +29,9 @@ group :spec, :development do
   gem 'rspec', '2.13.0'
   gem 'rake'
   gem 'simplecov', :require => false
+end
+
+# Guard-RSpec
+group :development do
+  gem 'guard-rspec'
 end
