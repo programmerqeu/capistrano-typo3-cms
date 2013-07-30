@@ -49,4 +49,4 @@ namespace :deploy do
   end
 end
 
-before "deploy:update_code", "deploy:check_changes"
+before 'deploy:update_code', 'deploy:check_changes'

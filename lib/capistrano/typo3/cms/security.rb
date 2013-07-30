@@ -53,7 +53,7 @@ namespace :typo3 do
         require 'json'
         require 'open-uri'
 
-        json = open("http://get.typo3.org/json").read
+        json = open('http://get.typo3.org/json').read
         obj = JSON.parse(json)
         puts obj['latest_deprecated']
       end

@@ -1,11 +1,11 @@
 namespace :typo3 do
   namespace :cms do
-    # CLI Communikcation
+    # CLI Communication
     task :check_changes do
       if current_revision == real_revision
-        Capistrano::CLI.ui.say("You don't have any changes to deploy")
+        Capistrano::CLI.ui.say('You don\'t have any changes to deploy')
 
-        agree = Capistrano::CLI.ui.agree("Continue (Yes, [No]) ") do |q|
+        agree = Capistrano::CLI.ui.agree('Continue (Yes, [No]) ') do |q|
           q.default = 'n'
         end
 
@@ -38,10 +38,10 @@ namespace :typo3 do
       task :check do
 
 
-        set(:user, Capistrano::CLI.ui.ask("User name: "))
+        set(:user, Capistrano::CLI.ui.ask('User name: '))
 
         return_code = nil
-        run "something; echo return code: $?" do |channel, stream, data|
+        run 'something; echo return code: $?' do |channel, stream, data|
           if data =~ /return code: (\d+)/
             return_code = $1.to_i
           else
