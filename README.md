@@ -39,7 +39,7 @@ Or easer and better with [RVM](https://rvm.io)
 $ cd /path/to/your/project
 $ capify ./
 ```
-Edit your **./Capfile** to include _capistrano-typo3-cms_
+Edit your **./Capfile** in your project root to include _capistrano-typo3-cms_
 
 ```ruby
 load 'deploy' if respond_to?(:namespace)
@@ -48,7 +48,7 @@ require 'capistrano-typo3-cms'
 load 'config/deploy' # remove this line to skip loading any of the default 
 ```
 
-Edit your ***./config/deploy.rb** in enable multistage support:
+Edit your **./config/deploy.rb** in enable multistage support:
 
 ```ruby
 set :stages, %w(production staging)
@@ -194,5 +194,5 @@ After installation, you can add the script to your Capfile:
 - Further thanks **JetBrains** for a free license for RubyMine. 
 
 <a href="http://www.jetbrains.com/ruby/features?utm_source=RubyMineUser&utm_medium=Banner&utm_campaign=RubyMine">
-<img src="http://www.jetbrains.com/img/logos/RubyMine_logo.gif" alt="Sponsored by RubyMine" style="width: 220px; float:right"></a>
+<img src="http://www.jetbrains.com/img/logos/RubyMine_logo.gif" alt="Sponsored by RubyMine" style="width: 200px; float:right"></a>
 
