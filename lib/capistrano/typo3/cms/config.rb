@@ -1,5 +1,5 @@
 # ===================================================================
-# These variables may be set in the client capfile if their default values
+# These variables may be set in the client Capfile if their default values
 # are not sufficient.
 # ===================================================================
 
@@ -24,12 +24,14 @@ set :confirm_stages, "#{env_production}"
 set :php_bin, 'php'
 
 # capistrano-typo3-cms
+set :version_typo3cms, '0'
 set :dir_source, 'src'
 set :dir_deploy, 'deploy'
 set :dir_htdocs, "#{dir_source}/htdocs"
 set :dir_fileadmin, "#{dir_htdocs}/fileadmin"
 set :dir_uploads, "#{dir_htdocs}/uploads"
 set :dir_vendor, "#{dir_source}/vendor"
+set :dir_backup, '/backup'
 
 set(:deploy_to) { "/var/www/#{application}/" }
 

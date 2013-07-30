@@ -20,6 +20,8 @@ describe 'Capistrano TYPO3 CMS main module' do
   subject { @configuration }
 
   it 'defines global variables' do
+    @configuration.fetch(:version_typo3cms).should == '0'
+
     @configuration.fetch(:env_development).should == 'development'
     @configuration.fetch(:env_staging).should == 'staging'
     @configuration.fetch(:env_production).should == 'production'

@@ -16,6 +16,9 @@ module Capistrano
           # set load path
           load_paths.push File.expand_path('../', __FILE__)
 
+          # load helper
+          load 'cms/helper'
+
           # load config
           load 'cms/config'
 

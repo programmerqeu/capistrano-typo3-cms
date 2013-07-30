@@ -37,7 +37,6 @@ namespace :typo3 do
       DESC
       task :check do
 
-
         set(:user, Capistrano::CLI.ui.ask('User name: '))
 
         return_code = nil
@@ -50,7 +49,11 @@ namespace :typo3 do
           end
         end
         puts "finished with return code: #{return_code}"
+
+        # Message
+        Capistrano::Typo3::Cms::Helper::message('Hello World')
       end
+
     end
   end
 end

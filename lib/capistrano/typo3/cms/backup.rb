@@ -1,10 +1,6 @@
 namespace :typo3 do
   namespace :cms do
 
-    # These variables may be set in the client capfile if their default values
-    # are not sufficient.
-    set :dir_backup, '/backup'
-
     # backup
     desc <<-DESC
 
