@@ -1,5 +1,5 @@
 namespace :typo3 do
-  namespace :backup do
+  namespace :cms do
 
     # These variables may be set in the client capfile if their default values
     # are not sufficient.
@@ -13,7 +13,6 @@ namespace :typo3 do
     DESC
     task :backup do
       puts 'backup user content on target enviroment'
-
     end
   end
 end

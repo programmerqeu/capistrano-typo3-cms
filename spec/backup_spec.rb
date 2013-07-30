@@ -16,7 +16,7 @@ describe 'Capistrano TYPO3 CMS Backup' do
   end
 
 
-  it 'defines typo3:cms:backup tasks to clear the cache' do
+  it 'defines typo3:cms:backup tasks to backup user data' do
     @configuration.find_task('typo3:cms:backup').should_not == nil
   end
 

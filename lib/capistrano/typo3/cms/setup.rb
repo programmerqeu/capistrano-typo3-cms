@@ -1,5 +1,22 @@
 namespace :typo3 do
   namespace :cms do
+    # CLI Communikcation
+    task :check_changes do
+      if current_revision == real_revision
+        Capistrano::CLI.ui.say("You don't have any changes to deploy")
+
+        agree = Capistrano::CLI.ui.agree("Continue (Yes, [No]) ") do |q|
+          q.default = 'n'
+        end
+
+        exit unless agree
+      else
+        # current_revision depends on current_path
+        reset!(:current_path)
+        reset!(:current_revision)
+        reset!(:real_revision)
+      end
+    end
 
     # clear cache
     desc <<-DESC
@@ -11,8 +28,6 @@ namespace :typo3 do
       $ cap  <enviroment> typo3:cms:cc \\
 
     DESC
-
-
     namespace :setup do
       desc <<-DESC
       Check the remote system have installed all required applications
@@ -21,6 +36,10 @@ namespace :typo3 do
 
       DESC
       task :check do
+
+
+        set(:user, Capistrano::CLI.ui.ask("User name: "))
+
         return_code = nil
         run "something; echo return code: $?" do |channel, stream, data|
           if data =~ /return code: (\d+)/

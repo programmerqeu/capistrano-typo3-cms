@@ -1,6 +1,5 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-
 describe 'Capistrano TYPO3 CMS main module' do
 
   before do
@@ -37,11 +36,6 @@ describe 'Capistrano TYPO3 CMS main module' do
     @configuration.fetch(:dir_vendor).should == 'src/vendor'
   end
 
-
-  it 'defines typo3:cms:speak tasks' do
-    @configuration.find_task('typo3:cms:speak').should_not == nil
-  end
-
   context 'when setting up other directories' do
     before do
       @configuration.set :dir_source, '/volumes/s2'
@@ -61,16 +55,4 @@ describe 'Capistrano TYPO3 CMS main module' do
       @configuration.fetch(:dir_vendor).should == '/volumes/s2/vendor'
     end
   end
-
-  context 'when running typo3:cms:speak' do
-    before do
-      @configuration.set :cmd, 'John'
-      @configuration.find_and_execute_task('typo3:cms:speak')
-    end
-
-    it { should have_run('echo "Hello, John"') }
-
-  end
-
-
 end
