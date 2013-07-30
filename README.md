@@ -157,10 +157,22 @@ Including new package "capistrano-mysql" to manage database data.
 	mysql:migrate
 	
 ### Version 3.0.0
+
+###### Scaffolding
 CLI command support to create a new TYPO3 CMS project from the scratch.
 ```bash
 $ typo3 init ./
 ```
+###### Add progress bar to follow tasks:
+- **typo3:cms**
+  - :backup
+  - :sync
+- **mysql**
+  - :backup
+  - :pull
+  - :push
+
+
 ## Dear PHP Developers
 I did not want that this tool may grow to a meta package, so I have refrained from creating unnecessary dependencies.
 But I want to recommend you some very useful extensions of Capistrano.
