@@ -1,4 +1,4 @@
-# SimpleCov & Coveralls
+# Coveralls
 require 'coveralls'
 Coveralls.wear!
 
