@@ -25,12 +25,20 @@ Gem::Specification.new do |specification|
       'capistrano-typo3-cms.gemspec',
 
       'lib/capistrano/typo3/cms.rb',
+      'lib/capistrano/typo3/cms/backup.rb',
+      'lib/capistrano/typo3/cms/cache.rb',
+      'lib/capistrano/typo3/cms/security.rb',
+      'lib/capistrano/typo3/cms/setup.rb',
       'lib/capistrano/typo3/cms/version.rb',
 
       'test/test_helper.rb',
       'test/version_test.rb',
 
-      'spec/spec_helper.rb',
+      'spec/backup_spec.rb',
+      'spec/cache_spec.rb',
+      'spec/cms_spec.rb',
+      'spec/security_spec.rb',
+      'spec/setup_spec.rb',
       'spec/version_spec.rb',
       "spec/spec_helper.rb"
   ]
@@ -57,6 +65,5 @@ Gem::Specification.new do |specification|
   specification.add_development_dependency 'hoe', '~> 1.6.0'
   specification.add_development_dependency 'rspec', '~> 2.4.0'
   specification.add_development_dependency 'rake', '~> 10.1.0'
-  specification.add_development_dependency 'simplecov', '~> 0.7.1'
 
 end

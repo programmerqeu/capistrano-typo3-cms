@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 # gem's dependencies specified in capistrano-typo3-cms.gemspec
 gemspec
 
-gem 'coveralls'
-
 group :test, :development do
   if RUBY_PLATFORM =~ /(win32|w32)/
     gem 'win32console', '1.3.0'
@@ -35,3 +33,6 @@ end
 group :development do
   gem 'guard-rspec'
 end
+
+# Coveralls
+gem 'coveralls', require: false

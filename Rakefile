@@ -21,6 +21,5 @@ end
 # CoverallsTask to push
 require 'coveralls/rake/task'
 Coveralls::RakeTask.new
-task :test_with_coveralls => [:spec, :features, 'coveralls:push']
 
 task :default => :test
