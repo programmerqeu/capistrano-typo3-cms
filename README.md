@@ -206,5 +206,4 @@ After installation, you can add the script to your Capfile:
 - Further thanks **JetBrains** for a free license for RubyMine. 
 
 <a href="http://www.jetbrains.com/ruby/features?utm_source=RubyMineUser&utm_medium=Banner&utm_campaign=RubyMine">
-<img src="http://www.jetbrains.com/img/logos/RubyMine_logo.gif" alt="Sponsored by RubyMin" width="200" align="right"></a>
-
+<img src="http://www.jetbrains.com/img/logos/RubyMine_logo.gif" alt="Sponsored by RubyMine from JetBrains" title="Sponsored by RubyMine from JetBrains" width="200" align="right"></a>
