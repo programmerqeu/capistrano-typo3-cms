@@ -26,7 +26,6 @@ group :spec, :development do
   gem 'railsless-deploy', :require => false
   gem 'rspec', '2.13.0'
   gem 'rake'
-  gem 'simplecov', :require => false
 end
 
 # Guard-RSpec
