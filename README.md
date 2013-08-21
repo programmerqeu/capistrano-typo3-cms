@@ -202,6 +202,13 @@ After installation, you can add the script to your Capfile:
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
+### Install locally
+```bash
+$ cd /path/to/capistrano-typo3-cms/
+$ rake build
+$ sudo gem install --local pkg/capistrano-typo3-cms-1.0.0.gem
+```
+
 <a name="thanks"></a>
 ## Thanks you
 1. A special thanks to **Jamis Buck** and **Lee Hambley**, the developers of Capistrano. 

@@ -1,8 +1,8 @@
 module Capistrano
   module Typo3
     module Cms
-      VERSION = '0.0.2'
-      TYPO3_CMS_VERSION = '4.7'
+      VERSION = '1.0.0'
+      TYPO3_CMS_VERSION = '6.0'
     end
   end
 end
