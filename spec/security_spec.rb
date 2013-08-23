@@ -49,15 +49,15 @@ describe 'Capistrano TYPO3 CMS security checks' do
     end
 
     # System directories
-    it { should have_run('touch https/t3lib/index.html') }
-    it { should have_run('touch https/typo3/index.html') }
-    it { should have_run('touch https/typo3conf/index.html') }
-    it { should have_run('touch https/typo3conf/ext/index.html') }
-    it { should have_run('touch https/typo3temp/index.html') }
+    it { should have_run('touch  https/t3lib/index.html') }
+    it { should have_run('touch  https/typo3/index.html') }
+    it { should have_run('touch  https/typo3conf/index.html') }
+    it { should have_run('touch  https/typo3conf/ext/index.html') }
+    it { should have_run('touch  https/typo3temp/index.html') }
 
     # user directories
-    it { should have_run('touch https/fileadmin/index.html') }
-    it { should have_run('touch https/uploads/index.html') }
+    it { should have_run('touch  https/fileadmin/index.html') }
+    it { should have_run('touch  https/uploads/index.html') }
   end
 
 end

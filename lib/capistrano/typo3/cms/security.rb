@@ -10,15 +10,8 @@ namespace :typo3 do
 
     DESC
     task :chmod do
-      # system directories
-      run "chmod -R 775 #{dir_htdocs}/typo3temp"
-      run "chmod 775 #{dir_htdocs}/typo3conf"
-      run "chmod -R 775 #{dir_htdocs}/typo3conf/ext"
-      run "chmod 770 #{dir_htdocs}/typo3conf/localconf.php"
-
-      # user upload directories
-      run "chmod -R 655 #{dir_fileadmin}"
-      run "chmod -R 655 #{dir_uploads}"
+      dirlist_htdocs.each { |name, option| run "chmod #{option[:chmod]} #{dir_htdocs}/#{name}" }
+      filelist_htdocs.each { |name, option| run "chmod #{option[:chmod]} #{dir_htdocs}/#{name}" }
     end
 
     namespace :security do
@@ -26,27 +19,19 @@ namespace :typo3 do
       desc <<-DESC
       Directory permissions are set to allow access from the outside to limit and to allow writing to the cache.
 
-      $ cap  <enviroment> typo3:cms:sexurity:access \\
+      $ cap  <enviroment> typo3:cms:security:access \\
 
       DESC
       task :access do
-        # system directories
-        run "touch #{dir_htdocs}/t3lib/index.html"
-        run "touch #{dir_htdocs}/typo3/index.html"
-        run "touch #{dir_htdocs}/typo3conf/index.html"
-        run "touch #{dir_htdocs}/typo3conf/ext/index.html"
-        run "touch #{dir_htdocs}/typo3temp/index.html"
-
-        # user upload directories
-        run "touch #{dir_fileadmin}/index.html"
-        run "touch #{dir_uploads}/index.html"
+        dirlist_htdocs.each { |name, option| run "touch #{option[:touch]} #{dir_htdocs}/#{name}/index.html"
+        }
       end
 
 
       desc <<-DESC
       Directory permissions are set to allow access from the outside to limit and to allow writing to the cache.
 
-        $ cap  <enviroment> typo3:cms:chmod \\
+        $ cap  <enviroment> typo3:cms:security:version \\
 
       DESC
       task :version do
