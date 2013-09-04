@@ -210,7 +210,7 @@ $ sudo gem install --local pkg/capistrano-typo3-cms-1.0.0.gem
 ```
 
 <a name="thanks"></a>
-## Thanks you
+## Thanks to
 1. A special thanks to **Jamis Buck** and **Lee Hambley**, the developers of Capistrano. 
 - Thank you to developers of capistrano-ext and railess-deploy. 
 - Further thanks **JetBrains** for a free license for RubyMine. 
