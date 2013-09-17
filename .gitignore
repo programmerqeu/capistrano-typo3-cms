@@ -16,8 +16,7 @@ test/tmp
 test/version_tmp
 tmp
 nbproject
-.idea
-nbproject
 .DS_Store
 vendor
 .sublime-workspace
+log/*
