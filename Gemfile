@@ -5,10 +5,9 @@ gemspec
 
 group :test, :development do
   if RUBY_PLATFORM =~ /(win32|w32)/
-    gem 'win32console', '1.3.0'
+    gem 'win32console', '1.3.2'
   end
   gem 'capistrano', :require => false
-  gem 'capistrano_colors', :require => false
   gem 'minitest'
   gem 'minitest-reporters', '>= 0.5.0'
   gem 'rake'
@@ -22,9 +21,8 @@ group :spec, :development do
   end
   gem 'capistrano', :require => false
   gem 'capistrano-spec', :git => 'git://github.com/mydrive/capistrano-spec.git'
-  gem 'capistrano_colors', :require => false
   gem 'railsless-deploy', :require => false
-  gem 'rspec', '2.13.0'
+  gem 'rspec', '2.14.1'
   gem 'rake'
 end
 

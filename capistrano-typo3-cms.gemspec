@@ -52,13 +52,13 @@ Gem::Specification.new do |specification|
   specification.add_development_dependency 'bundler', '~> 1.3'
   specification.add_development_dependency 'capistrano', '~>  2.15.2'
   specification.add_development_dependency 'coveralls', '~> 0.6.7'
-  specification.add_development_dependency 'capistrano-spec', '~> 0.5.0'
+  specification.add_development_dependency 'capistrano-spec', '~> 0.6.3'
   specification.add_development_dependency 'guard', '~> 1.8.1'
   specification.add_development_dependency 'guard-rspec', '~> 3.0.2'
   specification.add_development_dependency 'minitest'
   specification.add_development_dependency 'minitest-reporters'
   specification.add_development_dependency 'hoe', '~> 1.6.0'
-  specification.add_development_dependency 'rspec', '~> 2.4.0'
+  specification.add_development_dependency 'rspec', '~> 2.14.1'
   specification.add_development_dependency 'rake', '~> 10.1.0'
 
 end
