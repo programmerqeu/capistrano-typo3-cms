@@ -80,7 +80,7 @@ module Capistrano
 				end
 
 				# Puts formatted a message to the console
-				def self.message(message, type: 'info')
+				def self.message(message, type)
 					puts "\n\e[0;31m"
 					puts '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
 					puts ''
