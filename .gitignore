@@ -18,5 +18,5 @@ tmp
 nbproject
 .DS_Store
 vendor
-.sublime-workspace
+*.sublime-workspace
 log/*
