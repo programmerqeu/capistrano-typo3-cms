@@ -47,7 +47,7 @@ Edit your **./Capfile** in your project root to include _capistrano-typo3-cms_
 ```ruby
 load 'deploy' if respond_to?(:namespace)
 require 'capistrano'
-require 'capistrano-typo3-cms'
+require 'capistrano-typo3-cms' # Sometimes "require 'capistrano/typo3/cms'" works
 load 'config/deploy' # remove this line to skip loading any of the default 
 ```
 
