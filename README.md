@@ -18,7 +18,7 @@ ___
 [![Dependency Status](https://gemnasium.com/programmerqeu/capistrano-typo3-cms.png)](https://gemnasium.com/programmerqeu/capistrano-typo3-cms)
 [![Code Climate](https://codeclimate.com/github/programmerqeu/capistrano-typo3-cms.png)](https://codeclimate.com/github/programmerqeu/capistrano-typo3-cms)
 [![Coverage Status](https://coveralls.io/repos/programmerqeu/capistrano-typo3-cms/badge.png?branch=master)](https://coveralls.io/r/programmerqeu/capistrano-typo3-cms)
-[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/19a3c56b0f7b6cbe4ae22b905477ce5e "githalytics.com")](http://githalytics.com/programmerqeu/capistrano-typo3-cms)
+[![Inline docs](http://inch-ci.org/github/programmerqeu/capistrano-typo3-cms.svg?branch=master&style=flat-square)](http://inch-ci.org/github/programmerqeu/capistrano-typo3-cms)
 
 [![Codeship Status for programmerqeu/capistrano-typo3-cms](https://www.codeship.io/projects/58027520-cc72-0130-8afd-129f740051c5/status?branch=master)](https://www.codeship.io/projects/4919)
 
